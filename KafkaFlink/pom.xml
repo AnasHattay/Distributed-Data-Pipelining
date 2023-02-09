@@ -5,30 +5,34 @@
   <artifactId>KafkaFlink</artifactId>
   <packaging>jar</packaging>
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <version>1.0-SNAPSHOT</version>
   <name>KafkaFlink</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-    <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-connector-kafka</artifactId>
-      <version>1.15.1</version>
-    </dependency>
+  
+  <dependency>
+    <groupId>org.apache.flink</groupId>
+    <artifactId>flink-connector-kafka-0.11_2.11</artifactId>
+    <version>1.5.0</version>
+</dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-core</artifactId>
-      <version>1.16.1</version>
+      <version>1.5.0</version>
       <scope>provided</scope>
     </dependency>
+    
     <dependency>
-      <groupId>org.apache.flink</groupId>
-      <artifactId>flink-streaming-java</artifactId>
-      <version>1.16.1</version>
-      <scope>provided</scope>
-    </dependency>
+    <groupId>org.apache.flink</groupId>
+    <artifactId>flink-streaming-java_2.11</artifactId>
+    <version>1.5.0</version>
+    <scope>provided</scope>
+</dependency>
+
+
 
     <dependency>
       <groupId>junit</groupId>
