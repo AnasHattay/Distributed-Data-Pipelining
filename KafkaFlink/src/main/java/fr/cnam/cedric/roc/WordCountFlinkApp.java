@@ -13,8 +13,8 @@ public class WordCountFlinkApp {
 
     public static void main(String[] args) throws  Exception{
 
-        String inputTopic="testtopic";
-        String outputTopic="testtopic";
+        String inputTopic="inputTopic";
+        String outputTopic="inputTopic";
         String server="localhost:9092";
         String groupId="groupId";
         
@@ -29,6 +29,8 @@ public class WordCountFlinkApp {
         KafkaSink<String> sink =  createKafkaSink(outputTopic, server);
         
         countOperator.sinkTo(sink);
+        
+        environment.execute("WordCountFlinkApp");
     }
 
     public static KafkaSource<String> createKafkaSource(String inputTopic, String server, String groupId) throws Exception{
