@@ -13,10 +13,10 @@ public class WordCountFlinkApp {
 
     public static void main(String[] args) throws  Exception{
 
-        String inputTopic="testtopic";
+        String inputTopic="DataCollect1";
         String outputTopic="testtopic";
         String server="localhost:9092";
-        String groupId="groupId";
+        String groupId="fr.cnam.credic.roc";
         
         StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
         

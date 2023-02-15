@@ -1,4 +1,4 @@
-/home/pntumba/cnam_imt_code/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/WordCountFlinkApp.java
-/home/pntumba/cnam_imt_code/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/Tokenizer.java
-/home/pntumba/cnam_imt_code/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/Reducer.java
-/home/pntumba/cnam_imt_code/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/App.java
+/home/student/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/Tokenizer.java
+/home/student/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/Reducer.java
+/home/student/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/App.java
+/home/student/repository/data-pipeline/KafkaFlink/src/main/java/fr/cnam/cedric/roc/WordCountFlinkApp.java
