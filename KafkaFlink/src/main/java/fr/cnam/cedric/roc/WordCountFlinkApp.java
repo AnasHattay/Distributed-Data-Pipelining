@@ -9,12 +9,17 @@ import org.apache.flink.connector.kafka.source.enumerator.initializer.OffsetsIni
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.datastream.DataStream;
 
-public class WordCountFlinkApp {
+public class WordCountFlinkApp{
 
     public static void main(String[] args) throws  Exception{
 
+<<<<<<< HEAD
         String inputTopic="DataCollect1";
         String outputTopic="testtopic";
+=======
+        String inputTopic="topic1";
+        String outputTopic="topic2";
+>>>>>>> c5c0fe5daab35cc190635f514bd113ac55f03887
         String server="localhost:9092";
         String groupId="fr.cnam.credic.roc";
         
@@ -29,6 +34,8 @@ public class WordCountFlinkApp {
         KafkaSink<String> sink =  createKafkaSink(outputTopic, server);
         
         countOperator.sinkTo(sink);
+        
+        environment.execute("WordCountFlinkApp");
     }
 
     public static KafkaSource<String> createKafkaSource(String inputTopic, String server, String groupId) throws Exception{
@@ -45,7 +52,7 @@ public class WordCountFlinkApp {
     }
     
     
-    public static DataStream<String> countOperation(DataStream<String> text) {
+    public static DataStream<String> countOperation(DataStream<String> text){
     	
     	
     	 DataStream<String> counts = text.flatMap(new Tokenizer())
