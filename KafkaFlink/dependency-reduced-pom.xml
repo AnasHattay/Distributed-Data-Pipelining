@@ -204,10 +204,10 @@
     </dependency>
   </dependencies>
   <properties>
-    <target.java.version>1.8</target.java.version>
-    <log4j.version>2.14.1</log4j.version>
-    <flink.version>1.16.1</flink.version>
-    <maven.compiler.source>${target.java.version}</maven.compiler.source>
     <maven.compiler.target>${target.java.version}</maven.compiler.target>
+    <maven.compiler.source>${target.java.version}</maven.compiler.source>
+    <log4j.version>2.14.1</log4j.version>
+    <target.java.version>1.8</target.java.version>
+    <flink.version>1.16.1</flink.version>
   </properties>
 </project>
